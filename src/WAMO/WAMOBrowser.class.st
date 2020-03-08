@@ -35,7 +35,7 @@ WAMOBrowser >> doCount [
 		do: [ :each | instances add: each -> (each allInstances size)  ] 
 		displayingProgress: [ :each | each name ] 
 		every: 0.
-	packagesTable items: (instances groupedBy: [ :anAssoc | anAssoc key package ])
+	packagesTable items: (instances groupedBy: [ :anAssoc | anAssoc key package ]) associations
 ]
 
 { #category : #initialization }
