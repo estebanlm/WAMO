@@ -69,8 +69,8 @@ WAMOBrowser >> initializeWindow: aWindowPresenter [
 	aWindowPresenter 
 		title: 'Wind instance inspector';
 		initialExtent: 800@600;
-		toolBar: (self newToolBar
- 			addItem: (SpToolBarButtonPresenter new
+		toolbar: (self newToolbar
+ 			addItem: (SpToolbarButtonPresenter new
 				label: 'Go';
 				icon: (self iconNamed: #smallFind);
 				help: 'Count instances';
